@@ -1,0 +1,79 @@
+.html {
+    height: 100%; min-height: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 40px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "About Store . Gmail Images Menu Sign-In";
+}
+
+a {
+    text-decoration: none;
+    color:rgb(63, 60, 60);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#About {
+    justify-self: center;
+    grid-area: About;
+
+
+}
+#Store {
+    justify-self: center;
+    grid-area: Store;
+
+}
+#Gmail {
+    justify-self: center;
+    grid-area: Gmail;
+
+}
+#Images {
+    justify-self: center;
+    grid-area: Images;
+
+}
+#Menu {
+    justify-self: center;
+    grid-area: Menu;
+
+}
+#Sign-In {
+    justify-self: center;
+    grid-area: Sign-In;
+    
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas: 
+    ". logo ."
+    ". Search ."
+    ". flexbox ."
+    ". lang-text .";
+
+}
+#logo{
+    grid-area: logo; 
+}
+#Search{
+    grid-area: Search;
+}
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+}
+#lang-text{
+    grid-area: lang-text;
+}
+#lucky-search-btn{
+    grid-area: lucky-search-btn;
+}
+a:hover{
+    color:rgb(147, 68, 211);
+}
