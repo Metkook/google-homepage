@@ -1,0 +1,156 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 60px 60px 88% 70px 40px 60px;
+    grid-template-rows: 60px;
+    grid-template-areas: "About Store . Gmail Images Menu Sign-In";
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(88, 81, 81);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#About {
+    justify-self: center;
+    grid-area: About;
+
+
+}
+#Store {
+    justify-self: center;
+    grid-area: Store;
+
+}
+#Gmail {
+    justify-self: center;
+    grid-area: Gmail;
+
+}
+#Images {
+    justify-self: center;
+    grid-area: Images;
+
+}
+#Menu {
+    justify-self: flex-end;
+    grid-area: Menu;
+    align-self: flex-end;
+    
+
+}
+#Sign-In {
+    justify-self: center;
+    grid-area: Sign-In;
+    
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 90px 90px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". Search ."
+    ". flexbox ."
+    ". lang-text ."
+}
+
+#logo{
+    grid-area: logo; 
+    justify-self: center;
+    align-self: flex-end;
+}
+#Search{
+    grid-area: Search;
+    justify-self: center;
+    align-self: center;
+    height: 40%;
+    width: 75%;
+    border-radius: 10px; 
+    color: black;
+    outline-color: black;
+    border: 1px solid black;
+    
+    
+}
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    align-items:flex-end;
+    justify-self: center;
+    align-self: center;
+    
+}
+#lang-text{
+    grid-area: lang-text;
+    justify-self: right;
+    align-self: right;
+    
+}
+#lucky-search-btn{
+    grid-area: lucky-search-btn;
+    justify-self: center;
+    margin-left: 10px;
+}
+
+#google-search-btn {
+    grid-area: lucky-search-btn;
+    justify-self: center;
+    margin-right: 10px;
+}
+a:hover{
+    color:rgb(147, 68, 211);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 120px 100px 272% 120px 120px 120px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advertising business . how-search-works privacy terms settings";
+    padding: 0px 20px;
+
+}
+
+#advertising {
+    justify-self: center;
+    grid-area: About;
+
+
+}
+#business {
+    justify-self: center;
+    grid-area: Store;
+
+}
+#how-search-works {
+    justify-self: center;
+    grid-area: Gmail;
+
+}
+#privacy {
+    justify-self: center;
+    grid-area: Images;
+
+}
+#terms {
+    justify-self: flex-end;
+    grid-area: Menu;
+    align-self: flex-end;
+    
+
+}
+#settings {
+    justify-self: center;
+    grid-area: Sign-In;
+    
+}
