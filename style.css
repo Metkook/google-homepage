@@ -111,7 +111,7 @@ a:hover{
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: grid;
     grid-template-columns: 120px 100px 272% 120px 120px 120px;
